@@ -21,6 +21,7 @@ class CreateSubredditsTable extends Migration {
 			$table->timestamps();
 			$table->integer('creator_id')->unsigned();
 			$table->boolean('deleted')->default(false);
+			
 			$table->foreign('creator_id')->references('id')->on('users');
 		});
 	}
