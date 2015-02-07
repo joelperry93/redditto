@@ -17,11 +17,13 @@ class UserTableSeeder extends Seeder {
 
 		DB::table('users')->delete();
 
-		User::create([
-			'name'     => 'joel',
-			'email'    => 'joelperry@me.com',
-			'password' => '$2y$10$JFVBJO/RWmSL1UVFsv1uPeolMjqFn/BcFJAiMWjXApCW9/Uq.6WCa'
-		]);
+		$users = [
+			['name' => 'joel', 'email' => 'joelperry@me.com', 'password' => '$2y$10$JFVBJO/RWmSL1UVFsv1uPeolMjqFn/BcFJAiMWjXApCW9/Uq.6WCa']
+		];
+
+		foreach ($users as $user) {
+			User::create($user);
+		}
 	}
 
 }
