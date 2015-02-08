@@ -52,6 +52,13 @@
 				</ul>
 			</div>
 		</div>
+
+		<ul>
+			<?php /*
+			@foreach ($subreddits as $subreddit)
+				<li>{{ $subreddit->name }}</li> 
+			@endforeach */?>
+		</ul>
 	</nav>
 
 	@yield('content')

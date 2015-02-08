@@ -44,6 +44,25 @@ class PostsTableSeeder extends Seeder {
 				'slug'         => 'good-video', 
 				'is_link'      => true,
 				'is_nsfw'      => false
+			],		
+			[
+
+				'user_id'      => 1, 
+				'subreddit_id' => 5, 
+				'title'        => 'PC games are really good', 
+				'content'      => "It's better than other things",
+				'slug'         => 'pc-gaming-is-really-good', 
+				'is_link'      => false,
+				'is_nsfw'      => false
+			],		
+			[
+				'user_id'      => 1, 
+				'subreddit_id' => 3, 
+				'title'        => 'Haha, check this out', 
+				'content'      => 'http://www.google.com',
+				'slug'         => 'haha-check-this-out', 
+				'is_link'      => true,
+				'is_nsfw'      => false
 			]
 		];
 

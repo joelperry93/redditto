@@ -2,11 +2,11 @@
 
 use App\Post;
 use App\Http\Requests;
-use App\Http\Controllers\Controller;
+use App\Http\Controllers\Base;
 
 use Illuminate\Http\Request;
 
-class FrontPageController extends Controller {
+class FrontPageController extends Base {
 
 	/**
      * Create a new controller instance.

@@ -21,7 +21,8 @@ class SubredditTableSeeder extends Seeder {
 			['name' => 'animals', 'description' => 'We love animals here', 'adult_content' => false, 'creator_id' => 1],	
 			['name' => 'videos', 'description' => 'Watch good videos', 'adult_content' => false, 'creator_id' => 1 ],	
 			['name' => 'funny', 'description' => 'Things that are funny', 'adult_content' => false, 'creator_id' => 1],
-			['name' => 'futurology', 'description' => 'Things about the future', 'adult_content' => false, 'creator_id' => 1]
+			['name' => 'futurology', 'description' => 'Things about the future', 'adult_content' => false, 'creator_id' => 1],
+			['name' => 'pcgaming', 'description' => 'PC gaming is really good', 'adult_content' => false, 'creator_id' => 1]
 		];	
 
 		foreach ($subreddits as $subreddit) {

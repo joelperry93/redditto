@@ -11,6 +11,7 @@
 							<a>{{ $post->title }}</a> 
 							<span>[{{ $post->subreddit->name }}]</span>
 						</li>
+						<hr>
 					@endforeach
 				</ul>
 			</div>
