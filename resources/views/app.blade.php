@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>redditto | a clone of the front page of the internet</title>
 
+	<link href="/css/framework.css" rel="stylesheet">
 	<link href="/css/app.css" rel="stylesheet">
 
 	<!-- Fonts -->

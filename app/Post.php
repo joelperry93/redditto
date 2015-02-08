@@ -18,4 +18,10 @@ class Post extends Model {
      */
     protected $fillable = ['user_id', 'subreddit_id', 'title', 'is_link', 'is_nsfw', 'slug', 'content'];
 
+
+    public function subreddit()
+    {
+        return $this->belongsTo('App\Subreddit');
+    }
+
 }
