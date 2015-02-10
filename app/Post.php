@@ -21,7 +21,12 @@ class Post extends Model {
 
     public function subreddit()
     {
-        return $this->belongsTo('App\Subreddit');
+        return $this->belongsTo('App\Subreddit', 'subreddit_id');
+    }
+
+    public function commentsCount() 
+    {
+        return $this->hasMany('App\Comment')->wherePostId($this->id)->count();
     }
 
 }
