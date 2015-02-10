@@ -7,13 +7,19 @@
 				<a>{{ $post->title }}</a> 
 			
 				<div class="meta-container">
-					Posted to 
-					<a href="{{ url('r', $post->subreddit->id) }}" class="subreddit-link">
-						[{{ $post->subreddit->name }}]
-					</a>
-					
-					<i class="fa fa-comments-o"></i>
-					{{ $post->commentsCount() }} comments
+					<div class="meta-component">
+						Posted to 
+						<a href="{{ url('r', $post->subreddit->id) }}" class="subreddit-link">
+							[{{ $post->subreddit->name }}]
+						</a>
+					</div>
+					<div class="meta-component">
+						{{ Carbon::createFromTimeStamp(strtotime($post->created_at))->diffForHumans() }}	
+					</div>
+					<div class="meta-component">
+						<i class="fa fa-comments-o"></i>
+						{{ $post->commentsCount() }} comments
+					</div>
 				</div>
 			</li>
 			<hr>
