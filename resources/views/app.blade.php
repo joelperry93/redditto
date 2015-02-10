@@ -30,7 +30,8 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#">redditto<i class="fa fa-linux logo-icon"></i></a>
+
+					<a class="navbar-brand" href="#">redditto<i class="fa fa-linux logo-icon"></i></a>
 			</div>
 
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -62,7 +63,16 @@
 		</ul>
 	</nav>
 
-	@yield('content')
+	<div class="container">
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1">
+				<div class="panel">
+					@yield('content')
+				</div>
+			</div>
+		</div>
+	</div>
+	
 
 	<!-- Scripts -->
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
