@@ -12,6 +12,7 @@
 */
 
 Route::get('/', 'FrontPageController@index');
+Route::get('@{user}', 'UserController@profile');
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',
