@@ -5,7 +5,7 @@ use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 
-class SubredditController extends Controller {
+class ChannelController extends Controller {
 
 	//
 

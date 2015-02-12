@@ -1,10 +1,10 @@
 <?php
 
-use App\Subreddit;
+use App\Channel;
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Model;
 
-class SubredditTableSeeder extends Seeder {
+class ChannelsTableSeeder extends Seeder {
 
 	/**
 	 * Run the database seeds.
@@ -15,9 +15,9 @@ class SubredditTableSeeder extends Seeder {
 	{
 		Model::unguard();
 
-		DB::table('subreddits')->delete();
+		DB::table('channels')->delete();
 
-		$subreddits = [
+		$channels = [
 			['name' => 'animals', 'description' => 'We love animals here', 'adult_content' => false, 'creator_id' => 1],	
 			['name' => 'videos', 'description' => 'Watch good videos', 'adult_content' => false, 'creator_id' => 1 ],	
 			['name' => 'funny', 'description' => 'Things that are funny', 'adult_content' => false, 'creator_id' => 1],
@@ -25,8 +25,8 @@ class SubredditTableSeeder extends Seeder {
 			['name' => 'pcgaming', 'description' => 'PC gaming is really good', 'adult_content' => false, 'creator_id' => 1]
 		];	
 
-		foreach ($subreddits as $subreddit) {
-			Subreddit::create($subreddit);
+		foreach ($channels as $channel) {
+			Channel::create($channel);
 		}
 	}
 

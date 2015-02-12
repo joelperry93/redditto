@@ -20,7 +20,7 @@ class PostsTableSeeder extends Seeder {
 		$posts = [
 			[
 				'user_id'      => 1, 
-				'subreddit_id' => 3, 
+				'channel_id'   => 3, 
 				'title'        => 'This funny thing happened to me', 
 				'content'      => 'It was real funny.',
 				'slug'         => 'this-funny-thing-happened-to-me', 
@@ -29,7 +29,7 @@ class PostsTableSeeder extends Seeder {
 			],	
 			[
 				'user_id'      => 1, 
-				'subreddit_id' => 1, 
+				'channel_id'   => 1, 
 				'title'        => 'I love my hamster', 
 				'content'      => 'He is really cool!',
 				'slug'         => 'i-love-my-hamter', 
@@ -38,7 +38,7 @@ class PostsTableSeeder extends Seeder {
 			],	
 			[
 				'user_id'      => 1, 
-				'subreddit_id' => 2, 
+				'channel_id'   => 2, 
 				'title'        => 'Good video', 
 				'content'      => 'http://www.youtube.com',
 				'slug'         => 'good-video', 
@@ -48,7 +48,7 @@ class PostsTableSeeder extends Seeder {
 			[
 
 				'user_id'      => 1, 
-				'subreddit_id' => 5, 
+				'channel_id'   => 5, 
 				'title'        => 'PC games are really good', 
 				'content'      => "It's better than other things",
 				'slug'         => 'pc-gaming-is-really-good', 
@@ -57,7 +57,7 @@ class PostsTableSeeder extends Seeder {
 			],		
 			[
 				'user_id'      => 1, 
-				'subreddit_id' => 3, 
+				'channel_id'   => 3, 
 				'title'        => 'Haha, check this out', 
 				'content'      => 'http://www.google.com',
 				'slug'         => 'haha-check-this-out', 

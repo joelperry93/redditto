@@ -26,7 +26,7 @@ class FrontPageController extends Base {
     public function index(Post $posts)
     {
         return view('frontpage.show')->with([
-            'posts' => Post::with('subreddit')->get()
+            'posts' => Post::with('channel')->get()
         ]);
     }
 

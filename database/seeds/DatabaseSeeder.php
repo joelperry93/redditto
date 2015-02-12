@@ -15,7 +15,7 @@ class DatabaseSeeder extends Seeder {
 		Model::unguard();
 
 		$this->call('UserTableSeeder');
-		$this->call('SubredditTableSeeder');
+		$this->call('ChannelsTableSeeder');
 		$this->call('PostsTableSeeder');
 		$this->call('CommentsTableSeeder');
 	}

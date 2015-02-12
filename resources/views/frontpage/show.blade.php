@@ -9,8 +9,8 @@
 				<div class="meta-container">
 					<div class="meta-component">
 						Posted to 
-						<a href="{{ url('r', $post->subreddit->id) }}" class="subreddit-link">
-							[{{ $post->subreddit->name }}]
+						<a href="{{ url('r', $post->channel->id) }}" class="channel-link">
+							[{{ $post->channel->name }}]
 						</a>
 					</div>
 					<div class="meta-component">

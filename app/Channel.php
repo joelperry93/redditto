@@ -2,14 +2,14 @@
 
 use Illuminate\Database\Eloquent\Model;
 
-class Subreddit extends Model {
+class Channel extends Model {
 
 	/**
      * The database table used by the model.
      *
      * @var string
      */
-    protected $table = 'subreddits';
+    protected $table = 'channels';
 
     /**
      * The attributes that are mass assignable.

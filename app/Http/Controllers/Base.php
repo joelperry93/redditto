@@ -9,7 +9,7 @@ class Base extends Controller {
         parent::__construct();
 
         View::share([
-            'subreddits' => DB::table('subeddits')->all()
+            'channels' => DB::table('channels')->all()
        ]);
     }
 

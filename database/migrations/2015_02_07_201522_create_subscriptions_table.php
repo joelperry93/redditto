@@ -15,10 +15,10 @@ class CreateSubscriptionsTable extends Migration {
 		Schema::create('subscriptions', function(Blueprint $table)
 		{
 			$table->integer('user_id')->unsigned();
-			$table->integer('subreddit_id')->unsigned();
+			$table->integer('channel_id')->unsigned();
 			
 			$table->foreign('user_id')->references('id')->on('users');
-			$table->foreign('subreddit_id')->references('id')->on('subreddits');
+			$table->foreign('channel_id')->references('id')->on('channels');
 		});
 	}
 

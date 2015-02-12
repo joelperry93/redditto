@@ -3,7 +3,7 @@
 @section('content')
 
 	<ul class="posts-list">
-		<h2>{{ $subreddit->name }}</h2>
+		<h2>{{ $channel->name }}</h2>
 	</ul>
 
 @endsection

@@ -16,12 +16,12 @@ class Post extends Model {
      *
      * @var array
      */
-    protected $fillable = ['user_id', 'subreddit_id', 'title', 'is_link', 'is_nsfw', 'slug', 'content'];
+    protected $fillable = ['user_id', 'channel_id', 'title', 'is_link', 'is_nsfw', 'slug', 'content'];
 
 
-    public function subreddit()
+    public function channel()
     {
-        return $this->belongsTo('App\Subreddit', 'subreddit_id');
+        return $this->belongsTo('App\Channel', 'channel_id');
     }
 
     public function commentsCount() 

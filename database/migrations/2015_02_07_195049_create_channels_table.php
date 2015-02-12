@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateSubredditsTable extends Migration {
+class CreateChannelsTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,7 +12,7 @@ class CreateSubredditsTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('subreddits', function(Blueprint $table)
+		Schema::create('channels', function(Blueprint $table)
 		{
 			$table->increments('id');
 			$table->string('name');
@@ -33,7 +33,7 @@ class CreateSubredditsTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('subreddits');
+		Schema::drop('channels');
 	}
 
 }
