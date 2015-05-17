@@ -16,7 +16,7 @@ class CreatePostsTable extends Migration {
 		{
 			$table->increments('id');
 			$table->integer('user_id')->unsigned();
-			$table->integer('channel_id')->unsigned();
+			$table->integer('subreddit_id')->unsigned();
 			$table->string('title');
 			$table->text('content');
 			$table->string('slug');
@@ -26,7 +26,7 @@ class CreatePostsTable extends Migration {
 			$table->timestamps();
 			
 			$table->foreign('user_id')->references('id')->on('users');
-			$table->foreign('channel_id')->references('id')->on('channel');
+			$table->foreign('subreddit_id')->references('id')->on('subreddits');
 		});
 	}
 

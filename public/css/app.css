@@ -1,19 +1,73 @@
+/*
+    Posts
+*/
 .posts-list li {
     padding:0.6em;
     list-style: none;
     font-size:1.2em;
 }
 
-.meta-container {
-    font-size:15px;
+    .meta-container {
+        font-size:15px;
+    }
+
+    .meta-component {
+        margin-right:10px;
+        padding:5px 0px;
+        float:left;
+    }
+
+    .logo-icon {
+        margin:5px;
+    }
+
+
+/*
+    Comment
+*/
+li.comment {
+    list-style: none;
+    padding:1em;
+}
+    
+    li.comment .profile {
+        height:50px;
+    }
+
+        li.comment .profile .pic {
+            border:2px;
+            height:30px;
+            width:30px;
+            border-radius:160px;
+            background-color:#efefef;
+        }
+
+        li.comment .profile .username {
+            font-size:15px;
+            color:red;
+        }
+
+    li.comment p {
+
+    }
+
+ul.root-comments {
+    padding-left: 0;
 }
 
-.meta-component {
-    margin-right:10px;
-    padding:5px 0px;
-    float:left;
+input.comment-input {
+    width:500px;
+    height:50px;
 }
 
-.logo-icon {
-    margin:5px;
-}
+
+
+
+
+
+
+
+
+
+
+

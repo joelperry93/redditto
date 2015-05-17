@@ -31,7 +31,7 @@
 					<span class="icon-bar"></span>
 				</button>
 
-					<a class="navbar-brand" href="#">redditto<i class="fa fa-linux logo-icon"></i></a>
+					<a class="navbar-brand" href="/">redditto<i class="fa fa-linux logo-icon"></i></a>
 			</div>
 
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -40,6 +40,8 @@
 				</ul>-->
 
 				<ul class="nav navbar-nav navbar-right">
+						<li><a href="https://github.com/joelperry93/redditto">Source code</a></li>
+
 					@if (Auth::guest())
 						<li><a href="/auth/login">Login</a></li>
 						<li><a href="/auth/register">Register</a></li>
@@ -56,13 +58,16 @@
 		</div>
 
 		<ul>
-
+			<?php /*
+			@foreach ($subreddits as $subreddit)
+				<li>{{ $subreddit->name }}</li> 
+			@endforeach */?>
 		</ul>
 	</nav>
 
 	<div class="container">
 		<div class="row">
-			<div class="col-md-10 col-md-offset-1">
+			<div class="col-md-12">
 				<div class="panel">
 					@yield('content')
 				</div>

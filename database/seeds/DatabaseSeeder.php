@@ -1,5 +1,11 @@
 <?php
 
+
+use database\seeds\UserTableSeeder;
+use database\seeds\SubredditTableSeeder;
+use database\seeds\PostTableSeeder;
+use database\seeds\CommentTableSeeder;
+
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Model;
 
@@ -15,9 +21,9 @@ class DatabaseSeeder extends Seeder {
 		Model::unguard();
 
 		$this->call('UserTableSeeder');
-		$this->call('ChannelsTableSeeder');
-		$this->call('PostsTableSeeder');
-		$this->call('CommentsTableSeeder');
+		$this->call('SubredditTableSeeder');
+		$this->call('PostTableSeeder');
+		$this->call('CommentTableSeeder');
 	}
 
 }

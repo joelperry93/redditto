@@ -16,17 +16,26 @@ class Post extends Model {
      *
      * @var array
      */
-    protected $fillable = ['user_id', 'channel_id', 'title', 'is_link', 'is_nsfw', 'slug', 'content'];
+    protected $fillable = ['user_id', 'subreddit_id', 'title', 'is_link', 'is_nsfw', 'slug', 'content'];
 
-
-    public function channel()
+    public function user() 
     {
-        return $this->belongsTo('App\Channel', 'channel_id');
+        return $this->belongsTo('App\User', 'user_id');
     }
 
-    public function commentsCount() 
+    public function subreddit()
     {
-        return $this->hasMany('App\Comment')->wherePostId($this->id)->count();
+        return $this->belongsTo('App\Subreddit', 'subreddit_id');
+    }
+
+    public function comments() 
+    {
+        return $this->hasMany('App\Comment')->wherePostId($this->id);
+    }
+
+    public function rootComments() 
+    {
+        return $this->hasMany('App\Comment')->wherePostId($this->id)->whereParentId(null);
     }
 
 }
