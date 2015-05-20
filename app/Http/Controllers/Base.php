@@ -1,6 +1,6 @@
-<?php namespace App\Http\Controllers;
+<?php namespace Redditto\Http\Controllers;
 
-use App\Http\Controllers\Controller;
+use Redditto\Http\Controllers\Controller;
 
 class Base extends Controller {
 

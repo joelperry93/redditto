@@ -1,4 +1,4 @@
-<?php namespace App\Events;
+<?php namespace Redditto\Events;
 
 abstract class Event {
 

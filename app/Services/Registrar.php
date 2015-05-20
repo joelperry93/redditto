@@ -1,6 +1,6 @@
-<?php namespace App\Services;
+<?php namespace Redditto\Services;
 
-use App\User;
+use Redditto\User;
 use Validator;
 use Illuminate\Contracts\Auth\Registrar as RegistrarContract;
 

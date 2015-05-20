@@ -74,6 +74,10 @@
 			</div>
 		</div>
 	</div>
+
+	<footer>
+		
+	</footer>
 	
 
 	<!-- Scripts -->

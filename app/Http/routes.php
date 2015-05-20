@@ -10,9 +10,9 @@
 | and give it the controller to call when that URI is requested.
 |
 */
-use App\Subreddit;
-use App\Post;
-use App\User;
+use Redditto\Subreddit;
+use Redditto\Post;
+use Redditto\User;
 
 Route::bind('subreddit', function ($value, $route) {
     return Subreddit::where('name', $value)->first();
@@ -29,7 +29,7 @@ Route::bind('user', function ($value, $route) {
 Route::get('/', 'FrontPageController@index');
 Route::get('@{user}', 'UserController@show');
 Route::get('/{subreddit}', 'SubredditController@show');
-Route::get('/{subreddit}/post/{post}', 'PostController@show');
+Route::get('/{subreddit}/{post}', 'PostController@show');
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',

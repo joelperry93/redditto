@@ -1,4 +1,4 @@
-<?php namespace App;
+<?php namespace Redditto;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -20,7 +20,7 @@ class Comment extends Model {
 
     public function user() 
     {
-        return $this->belongsTo('App\User', 'user_id');
+        return $this->belongsTo('Redditto\User', 'user_id');
     }
 
     public function children()

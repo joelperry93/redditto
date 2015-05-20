@@ -1,9 +1,9 @@
-<?php namespace App\Http\Controllers;
+<?php namespace Redditto\Http\Controllers;
 
-use App\Http\Requests;
-use App\Http\Controllers\Controller;
-use App\Post;
-use App\Subreddit;
+use Redditto\Http\Requests;
+use Redditto\Http\Controllers\Controller;
+use Redditto\Post;
+use Redditto\Subreddit;
 
 use Illuminate\Http\Request;
 

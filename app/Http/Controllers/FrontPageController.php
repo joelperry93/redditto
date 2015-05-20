@@ -1,8 +1,8 @@
-<?php namespace App\Http\Controllers;
+<?php namespace Redditto\Http\Controllers;
 
-use App\Post;
-use App\Http\Requests;
-use App\Http\Controllers\Base;
+use Redditto\Post;
+use Redditto\Http\Requests;
+use Redditto\Http\Controllers\Base;
 
 use Illuminate\Http\Request;
 

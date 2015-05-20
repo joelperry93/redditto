@@ -1,4 +1,4 @@
-<?php namespace App\Commands;
+<?php namespace Redditto\Commands;
 
 abstract class Command {
 

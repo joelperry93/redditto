@@ -1,4 +1,4 @@
-<?php namespace App;
+<?php namespace Redditto;
 
 use Illuminate\Database\Eloquent\Model;
 

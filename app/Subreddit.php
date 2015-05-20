@@ -1,4 +1,4 @@
-<?php namespace App;
+<?php namespace Redditto;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -20,7 +20,7 @@ class Subreddit extends Model {
 
     public function posts() 
     {
-        return $this->hasMany('App\Post')->whereSubredditId($this->id);
+        return $this->hasMany('Redditto\Post')->whereSubredditId($this->id);
     }
 
 }

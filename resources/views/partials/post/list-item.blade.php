@@ -2,7 +2,7 @@
     <img src="" class="list-item-image" />
 
     <div>
-        <a href="{{ url( ($post->is_link ? $post->content : '/'.$post->subreddit->name.'/post/'.$post->slug)) }}">
+        <a href="{{ url( ($post->is_link ? $post->content : '/'.$post->subreddit->name.'/'.$post->slug)) }}">
             {{ $post->title }}
         </a>
         
@@ -16,7 +16,7 @@
 
             <div class="meta-component">
                  <!--   <i class="fa fa-comments-o"></i> -->
-                <a href="{{ url('/'.$post->subreddit->name.'/post/'.$post->slug) }}">
+                <a href="{{ url('/'.$post->subreddit->name.'/'.$post->slug) }}">
                     {{ $post->comments->count() }} comments
                 </a>
             </div>

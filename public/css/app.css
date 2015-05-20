@@ -106,10 +106,10 @@ input.comment-input {
 .list-item-image {
     height:50px;
     width:50px;
-    background-color:#444;
+    background-color:#efefef;
+    border:0px;
     float:left;
     margin-right:15px;
-    border-radius:50%;
 }
 
 

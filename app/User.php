@@ -1,4 +1,4 @@
-<?php namespace App;
+<?php namespace Redditto;
 
 use Illuminate\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;
@@ -34,7 +34,7 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
 
 	public function posts() 
 	{
-	    return $this->hasMany('App\Post')->whereUserId($this->id);
+	    return $this->hasMany('Redditto\Post')->whereUserId($this->id);
 	}
 
 }

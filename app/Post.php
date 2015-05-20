@@ -1,4 +1,4 @@
-<?php namespace App;
+<?php namespace Redditto;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -20,22 +20,22 @@ class Post extends Model {
 
     public function user() 
     {
-        return $this->belongsTo('App\User', 'user_id');
+        return $this->belongsTo('Redditto\User', 'user_id');
     }
 
     public function subreddit()
     {
-        return $this->belongsTo('App\Subreddit', 'subreddit_id');
+        return $this->belongsTo('Redditto\Subreddit', 'subreddit_id');
     }
 
     public function comments() 
     {
-        return $this->hasMany('App\Comment')->wherePostId($this->id);
+        return $this->hasMany('Redditto\Comment')->wherePostId($this->id);
     }
 
     public function rootComments() 
     {
-        return $this->hasMany('App\Comment')->wherePostId($this->id)->whereParentId(null);
+        return $this->hasMany('Redditto\Comment')->wherePostId($this->id)->whereParentId(null);
     }
 
 }
