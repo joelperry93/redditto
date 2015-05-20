@@ -9,6 +9,7 @@
 
     .meta-container {
         font-size:15px;
+        height:30px;
     }
 
     .meta-component {
@@ -21,6 +22,20 @@
         margin:5px;
     }
 
+.navbar {
+    background-color:#EF7E7E;
+    color:#fff;
+}
+
+.navbar-default .navbar-brand, .navbar-default .navbar-nav li a {
+    color:#fff;
+}
+
+
+.post-details {
+    text-align:right;
+}
+
 
 /*
     Comment
@@ -31,21 +46,48 @@ li.comment {
 }
     
     li.comment .profile {
-        height:50px;
+        height:30px;
     }
 
         li.comment .profile .pic {
             border:2px;
-            height:30px;
+            height:25px;
             width:30px;
             border-radius:160px;
             background-color:#efefef;
         }
 
-        li.comment .profile .username {
-            font-size:15px;
+        li.comment .profile .comment-username {
+            font-size:0.9em;
             color:red;
+            float:left;
         }
+
+        li.comment p.comment-content {
+            padding:0.6em 0em;
+        }
+
+        li.comment .profile .comment-datetime {
+            font-size:0.9em;
+            float:right;
+        }
+
+        li.comment .comment-actions-container {
+            clear:both;
+        }
+
+            li.comment .comment-actions-container a {
+                color:#333;
+            }            
+
+            li.comment .comment-actions-container .comment-actions-list {
+                font-size:0.8em;
+
+            }            
+
+            li.comment .comment-actions-container .comment-actions-list-item {
+
+            }
 
     li.comment p {
 
@@ -58,6 +100,16 @@ ul.root-comments {
 input.comment-input {
     width:500px;
     height:50px;
+}
+
+
+.list-item-image {
+    height:50px;
+    width:50px;
+    background-color:#444;
+    float:left;
+    margin-right:15px;
+    border-radius:50%;
 }
 
 
