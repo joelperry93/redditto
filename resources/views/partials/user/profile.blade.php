@@ -6,5 +6,4 @@
 
 <hr>
 
-<h4>Posts</h4>
 @include('partials.post.list', ['posts' => $user->posts])
