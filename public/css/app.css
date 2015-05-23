@@ -1,125 +1,69 @@
-/*
-    Posts
-*/
-.posts-list li {
-    padding:0.6em;
-    list-style: none;
-    font-size:1.2em;
-}
-
-    .meta-container {
-        font-size:15px;
-        height:30px;
-    }
-
-    .meta-component {
-        margin-right:10px;
-        padding:5px 0px;
-        float:left;
-    }
-
-    .logo-icon {
-        margin:5px;
-    }
-
 .navbar {
-    background-color:#EF7E7E;
-    color:#fff;
-}
+  background-color: #EF7E7E;
+  color: #fff; }
+  .navbar a.navbar-brand {
+    color: white; }
 
-.navbar-default .navbar-brand, .navbar-default .navbar-nav li a {
-    color:#fff;
-}
+.logo-icon {
+  margin: 5px; }
 
-
-.post-details {
-    text-align:right;
-}
-
-
-/*
-    Comment
-*/
 li.comment {
-    list-style: none;
-    padding:1em;
-}
-    
-    li.comment .profile {
-        height:30px;
-    }
-
-        li.comment .profile .pic {
-            border:2px;
-            height:25px;
-            width:30px;
-            border-radius:160px;
-            background-color:#efefef;
-        }
-
-        li.comment .profile .comment-username {
-            font-size:0.9em;
-            color:red;
-            float:left;
-        }
-
-        li.comment p.comment-content {
-            padding:0.6em 0em;
-        }
-
-        li.comment .profile .comment-datetime {
-            font-size:0.9em;
-            float:right;
-        }
-
-        li.comment .comment-actions-container {
-            clear:both;
-        }
-
-            li.comment .comment-actions-container a {
-                color:#333;
-            }            
-
-            li.comment .comment-actions-container .comment-actions-list {
-                font-size:0.8em;
-
-            }            
-
-            li.comment .comment-actions-container .comment-actions-list-item {
-
-            }
-
-    li.comment p {
-
-    }
+  list-style: none;
+  padding: 1em; }
+  li.comment .profile {
+    height: 30px; }
+    li.comment .profile .pic {
+      border: 2px;
+      height: 25px;
+      width: 30px;
+      border-radius: 160px;
+      background-color: #efefef; }
+    li.comment .profile .comment-username {
+      font-size: 0.9em;
+      color: red;
+      float: left; }
+    li.comment .profile .comment-datetime {
+      font-size: 1em;
+      float: right; }
+  li.comment p.comment-content {
+    padding: 1em 0em; }
+  li.comment .comment-actions-container {
+    clear: both; }
+  li.comment .comment-actions-container a {
+    color: #333; }
+  li.comment .comment-actions-container .comment-actions-list {
+    font-size: 0.8em; }
 
 ul.root-comments {
-    padding-left: 0;
-}
+  padding-left: 0; }
 
 input.comment-input {
-    width:500px;
-    height:50px;
-}
+  width: 500px;
+  height: 50px; }
 
+.posts-list li {
+  padding: 0.8em;
+  list-style: none;
+  font-size: 1.2em; }
+
+.meta-container {
+  font-size: 15px;
+  height: 30px; }
+
+.meta-component {
+  margin-right: 10px;
+  padding: 5px 0px;
+  float: left; }
 
 .list-item-image {
-    height:50px;
-    width:50px;
-    background-color:#efefef;
-    border:0px;
-    float:left;
-    margin-right:15px;
-}
+  height: 50px;
+  width: 50px;
+  background-color: #efefef;
+  border: 0px;
+  float: left;
+  margin-right: 15px; }
 
+.post-details {
+  text-align: right; }
 
-
-
-
-
-
-
-
-
-
-
+/*# sourceMappingURL=app.css.map */
