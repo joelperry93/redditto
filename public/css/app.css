@@ -40,21 +40,21 @@ input.comment {
 h5.title {
   font-size: 1em; }
 
-.posts-list li {
+ul.posts li {
   padding: 0.8em;
   list-style: none;
   font-size: 1.2em; }
-  .posts-list li img {
+  ul.posts li img {
     height: 50px;
     width: 50px;
     background-color: #efefef;
     border: 0px;
     float: left;
     margin-right: 15px; }
-  .posts-list li .meta {
+  ul.posts li .meta {
     font-size: 0.9em;
     height: 30px; }
-    .posts-list li .meta .meta-component {
+    ul.posts li .meta .meta-component {
       margin-right: 10px;
       padding: 5px 0px;
       float: left; }

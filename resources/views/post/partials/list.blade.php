@@ -1,4 +1,4 @@
-<ul class="posts-list">
+<ul class="posts">
     @foreach ($posts as $post)
         @include('post.partials.list-item', ['post' => $post])
     @endforeach
