@@ -1,12 +1,11 @@
 .navbar {
-  background-color: #EF7E7E; }
+  background-color: white; }
   .navbar a.navbar-brand {
-    color: white; }
-  .navbar .navbar-default .navbar-nav li a {
-    color: white; }
-
-.logo-icon {
-  margin: 5px; }
+    color: #EF7E7E; }
+  .navbar .navbar-default.navbar-nav li a {
+    color: #EF7E7E; }
+  .navbar .logo-icon {
+    margin: 5px; }
 
 li.comment {
   list-style: none;
@@ -19,13 +18,13 @@ li.comment {
       width: 30px;
       border-radius: 160px;
       background-color: #efefef; }
-    li.comment .profile .comment-username {
-      font-size: 0.9em;
-      color: red;
-      float: left; }
-    li.comment .profile .comment-datetime {
-      font-size: 1em;
-      float: right; }
+  li.comment .comment-username {
+    font-size: 0.9em;
+    color: red;
+    float: left; }
+  li.comment .comment-datetime {
+    font-size: 1em;
+    float: right; }
   li.comment p.comment-content {
     padding: 1em 0em; }
   li.comment .comment-actions-container {
