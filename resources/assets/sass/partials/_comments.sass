@@ -3,45 +3,35 @@ li.comment
     padding: 1em
 
     .profile
-        height: 30px
-        .pic
-            border: 2px
-            height: 25px
-            width: 30px
-            border-radius: 160px
-            background-color: #efefef
+        .username
+            +small-font
+            color: $red
+            float: left
 
-    .comment-username
-        font:
-            size: 0.9em
-        color: red
-        float: left
-
-    .comment-datetime
-        font:
-            size: 1em
+    .time
+        +small-font
         float: right
+        text-align: right
 
-    p.comment-content
-        padding: 1em 0em
+    p
+        +medium-font
+        padding: 1em inherit
 
-    .comment-actions-container
-        clear: both
-
-    .comment-actions-container
+    ul.actions
+        +small-font
         a
             color: #333
-        .comment-actions-list
-            font-size: 0.8em
+
 
 ul.root-comments
     padding-left: 0
 
-input.comment-input
+input.comment
     width: 500px
     height: 50px
 
-
+h5.title
+    +medium-font
 
 
 

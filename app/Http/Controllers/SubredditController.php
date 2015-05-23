@@ -4,7 +4,6 @@ use Redditto\Http\Requests;
 use Redditto\Http\Controllers\Controller;
 use Redditto\Subreddit;
 
-use Illuminate\Http\Request;
 
 class SubredditController extends Controller {
 

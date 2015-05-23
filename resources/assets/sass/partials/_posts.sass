@@ -2,24 +2,25 @@
     li
         padding: 0.8em
         list-style: none
-        font-size: 1.2em
+        +large-font
+        img
+            height: 50px
+            width: 50px
+            background-color: #efefef
+            border: 0px
+            float: left
+            margin-right: 15px
+        .meta
+            +small-font
+            height: 30px
+            .meta-component
+                margin-right: 10px
+                padding: 5px 0px
+                float: left
 
-.meta-container
-    font-size: 15px
-    height: 30px
-
-.meta-component
-    margin-right: 10px
-    padding: 5px 0px
-    float: left
-
-.list-item-image
-    height: 50px
-    width: 50px
-    background-color: #efefef
-    border: 0px
-    float: left
-    margin-right: 15px
-
-.post-details
-    text-align: right
+article.post
+    h4.title
+        +large-font
+    .details
+        +small-font
+        text-align: right

@@ -4,6 +4,6 @@
 {!! Form::open() !!}
     <div class="form-group">
    
-    {!! Form::text('comment', null, ['class' => 'form-control comment-input']) !!} </div>
+    {!! Form::text('comment', null, ['class' => 'form-control comment']) !!} </div>
     {!! Form::button('Click Me!',[ 'class' => 'btn btn-default']) !!}
 {!! Form::close() !!}

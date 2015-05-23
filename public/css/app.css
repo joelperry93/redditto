@@ -1,5 +1,9 @@
+a {
+  color: #007ca6; }
+
 .navbar {
-  background-color: white; }
+  background-color: white;
+  border: 0px 4px solid #EF7E7E; }
   .navbar a.navbar-brand {
     color: #EF7E7E; }
   .navbar .navbar-default.navbar-nav li a {
@@ -10,60 +14,56 @@
 li.comment {
   list-style: none;
   padding: 1em; }
-  li.comment .profile {
-    height: 30px; }
-    li.comment .profile .pic {
-      border: 2px;
-      height: 25px;
-      width: 30px;
-      border-radius: 160px;
-      background-color: #efefef; }
-  li.comment .comment-username {
+  li.comment .profile .username {
     font-size: 0.9em;
-    color: red;
+    color: #EF7E7E;
     float: left; }
-  li.comment .comment-datetime {
+  li.comment .time {
+    font-size: 0.9em;
+    float: right;
+    text-align: right; }
+  li.comment p {
     font-size: 1em;
-    float: right; }
-  li.comment p.comment-content {
-    padding: 1em 0em; }
-  li.comment .comment-actions-container {
-    clear: both; }
-  li.comment .comment-actions-container a {
-    color: #333; }
-  li.comment .comment-actions-container .comment-actions-list {
-    font-size: 0.8em; }
+    padding: 1em inherit; }
+  li.comment ul.actions {
+    font-size: 0.9em; }
+    li.comment ul.actions a {
+      color: #333; }
 
 ul.root-comments {
   padding-left: 0; }
 
-input.comment-input {
+input.comment {
   width: 500px;
   height: 50px; }
+
+h5.title {
+  font-size: 1em; }
 
 .posts-list li {
   padding: 0.8em;
   list-style: none;
   font-size: 1.2em; }
+  .posts-list li img {
+    height: 50px;
+    width: 50px;
+    background-color: #efefef;
+    border: 0px;
+    float: left;
+    margin-right: 15px; }
+  .posts-list li .meta {
+    font-size: 0.9em;
+    height: 30px; }
+    .posts-list li .meta .meta-component {
+      margin-right: 10px;
+      padding: 5px 0px;
+      float: left; }
 
-.meta-container {
-  font-size: 15px;
-  height: 30px; }
+article.post h4.title {
+  font-size: 1.2em; }
 
-.meta-component {
-  margin-right: 10px;
-  padding: 5px 0px;
-  float: left; }
-
-.list-item-image {
-  height: 50px;
-  width: 50px;
-  background-color: #efefef;
-  border: 0px;
-  float: left;
-  margin-right: 15px; }
-
-.post-details {
+article.post .details {
+  font-size: 0.9em;
   text-align: right; }
 
 /*# sourceMappingURL=app.css.map */

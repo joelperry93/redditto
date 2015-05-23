@@ -1,5 +1,5 @@
 @extends('app')
 
 @section('content')
-	@include('partials.post.list', ['posts' => $posts]);
+	@include('post.partials.list', ['posts' => $posts]);
 @endsection
