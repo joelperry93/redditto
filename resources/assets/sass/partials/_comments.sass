@@ -1,37 +1,28 @@
-li.comment
-    list-style: none
-    padding: 1em
-
-    .profile
-        .username
-            +small-font
-            color: $red
-            float: left
-
-    .time
-        +small-font
-        float: right
-        text-align: right
-
-    p
-        +medium-font
-        padding: 1em inherit
-
-    ul.actions
-        +small-font
-        a
-            color: #333
-
-
-ul.root-comments
+ul.comments
     padding-left: 0
+    li.comment
+        list-style: none
+        padding: 1em
+        .profile
+            .username
+                +small-font
+                color: $red
+                float: left
+        .time
+            +small-font
+            float: right
+            text-align: right
+        p
+            +medium-font
+            padding: 1em inherit
+        ul.actions
+            +small-font
+            a
+                color: #333
 
 input.comment
     width: 500px
     height: 50px
-
-h5.title
-    +medium-font
 
 
 

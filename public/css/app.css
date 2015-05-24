@@ -2,8 +2,7 @@ a {
   color: #007ca6; }
 
 .navbar {
-  background-color: white;
-  border: 0px 4px solid #EF7E7E; }
+  background-color: white; }
   .navbar a.navbar-brand {
     color: #EF7E7E; }
   .navbar .navbar-default.navbar-nav li a {
@@ -11,34 +10,30 @@ a {
   .navbar .logo-icon {
     margin: 5px; }
 
-li.comment {
-  list-style: none;
-  padding: 1em; }
-  li.comment .profile .username {
-    font-size: 0.9em;
-    color: #EF7E7E;
-    float: left; }
-  li.comment .time {
-    font-size: 0.9em;
-    float: right;
-    text-align: right; }
-  li.comment p {
-    font-size: 1em;
-    padding: 1em inherit; }
-  li.comment ul.actions {
-    font-size: 0.9em; }
-    li.comment ul.actions a {
-      color: #333; }
-
-ul.root-comments {
+ul.comments {
   padding-left: 0; }
+  ul.comments li.comment {
+    list-style: none;
+    padding: 1em; }
+    ul.comments li.comment .profile .username {
+      font-size: 0.9em;
+      color: #EF7E7E;
+      float: left; }
+    ul.comments li.comment .time {
+      font-size: 0.9em;
+      float: right;
+      text-align: right; }
+    ul.comments li.comment p {
+      font-size: 1em;
+      padding: 1em inherit; }
+    ul.comments li.comment ul.actions {
+      font-size: 0.9em; }
+      ul.comments li.comment ul.actions a {
+        color: #333; }
 
 input.comment {
   width: 500px;
   height: 50px; }
-
-h5.title {
-  font-size: 1em; }
 
 ul.posts li {
   padding: 0.8em;

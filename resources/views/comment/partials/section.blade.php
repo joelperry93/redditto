@@ -4,11 +4,21 @@
 
 
 @if ($post->comments->count() > 0)
-    <ul class="root-comments row">
+    <ul class="comments row">
         @include('comment.partials._list', ['comments' => $post->rootComments])
     </ul>
 @else
     <p>:'( no one has commented</p>
 @endif
 
-@include('comment.partials._form', ['post' => $post])
+
+<hr/>
+<h5>Write a new comment</h5>
+
+{!! Form::open() !!}
+    <div class="form-group">
+        {!! Form::text('comment', null, ['class' => 'form-control comment']) !!}
+    </div>
+
+    {!! Form::button('Click Me!',[ 'class' => 'btn btn-default']) !!}
+{!! Form::close() !!}
