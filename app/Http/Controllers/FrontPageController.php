@@ -10,8 +10,6 @@ class FrontPageController extends Base {
 
 	/**
      * Create a new controller instance.
-     *
-     * @return void
      */
     public function __construct()
     {
