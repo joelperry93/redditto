@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Eloquent\Model;
 
-class Vote extends Model {
+class PostVote extends Model {
 
 	//
 

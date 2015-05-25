@@ -1,10 +1,10 @@
 <?php
 
-use Redditto\Vote;
+use Redditto\PostVote;
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Model;
 
-class VoteTableSeeder extends Seeder {
+class PostVoteTableSeeder extends Seeder {
 
 	/**
 	 * Run the database seeds.
@@ -15,7 +15,7 @@ class VoteTableSeeder extends Seeder {
 	{
 		Model::unguard();
 
-		DB::table('votes')->delete();
+		DB::table('post_votes')->delete();
 
 		$votes = [
 			[
@@ -46,7 +46,7 @@ class VoteTableSeeder extends Seeder {
 		];
 
 		foreach ($votes as $vote) {
-			Vote::create($vote);
+			PostVote::create($vote);
 		}
 	}
 

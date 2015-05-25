@@ -24,7 +24,7 @@ class DatabaseSeeder extends Seeder {
 		$this->call('SubredditTableSeeder');
 		$this->call('PostTableSeeder');
 		$this->call('CommentTableSeeder');
-		$this->call('VoteTableSeeder');
+		$this->call('PostVoteTableSeeder');
 	}
 
 }
