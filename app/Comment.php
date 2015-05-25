@@ -27,4 +27,9 @@ class Comment extends Model {
     {
         return self::where('parent_id', $this->id)->get();
     }
+
+    public function votes()
+    {
+        return $this->hasMany('Redditto\CommentVote')->whereCommentId($this->id)->sum('value');
+    }
 }
