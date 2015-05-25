@@ -17,36 +17,14 @@ class CommentVoteTableSeeder extends Seeder {
 
 		DB::table('comment_votes')->delete();
 
-		$votes = [
-			[
-				'comment_id' => 1,
-				'user_id' => 1,
-				'value'   => 1
-			],
-			[
-				'comment_id' => 1,
-				'user_id' => 2,
-				'value'   => 1
-			],
-			[
-				'comment_id' => 1,
-				'user_id' => 3,
-				'value'   => 1
-			],
-			[
-				'comment_id' => 1,
-				'user_id' => 4,
-				'value'   => 1
-			],
-			[
-				'comment_id' => 1,
-				'user_id' => 5,
-				'value'   => 1
-			]
-		];
+		$votes = [];
 
-		foreach ($votes as $vote) {
-			CommentVote::create($vote);
+		for ($i = 0; $i < 2000; $i++) {
+			CommentVote::create([
+				'comment_id' => rand(1, 5),
+				'user_id'    => rand(1, 5),
+				'value'      => rand(0, 5) ? 1 : -1
+			]);
 		}
 	}
 

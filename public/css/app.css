@@ -30,6 +30,8 @@ ul.comments {
       font-size: 0.9em; }
       ul.comments li.comment ul.actions a {
         color: #333; }
+  ul.comments .vote-count {
+    color: #EF7E7E; }
 
 input.comment {
   width: 500px;
@@ -53,6 +55,9 @@ ul.posts li {
       margin-right: 10px;
       padding: 5px 0px;
       float: left; }
+  ul.posts li .vote-count {
+    color: #EF7E7E;
+    float: right; }
 
 article.post h4.title {
   font-size: 1.2em; }
@@ -60,5 +65,8 @@ article.post h4.title {
 article.post .details {
   font-size: 0.9em;
   text-align: right; }
+
+article.post .vote-count {
+  color: #EF7E7E; }
 
 /*# sourceMappingURL=app.css.map */

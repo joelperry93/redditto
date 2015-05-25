@@ -17,36 +17,12 @@ class PostVoteTableSeeder extends Seeder {
 
 		DB::table('post_votes')->delete();
 
-		$votes = [
-			[
-				'post_id' => 1,
-				'user_id' => 1,
-				'value'   => 1
-			],
-			[
-				'post_id' => 1,
-				'user_id' => 2,
-				'value'   => 1
-			],
-			[
-				'post_id' => 1,
-				'user_id' => 3,
-				'value'   => 1
-			],
-			[
-				'post_id' => 1,
-				'user_id' => 4,
-				'value'   => 1
-			],
-			[
-				'post_id' => 1,
-				'user_id' => 5,
-				'value'   => 1
-			]
-		];
-
-		foreach ($votes as $vote) {
-			PostVote::create($vote);
+		for ($i = 1; $i < 2000; $i++) {
+			PostVote::creatE([
+				'post_id' => rand(1, 5),
+				'user_id' => rand(1, 5),
+				'value'   => rand(0, 5) ? 1 : -1
+			]);
 		}
 	}
 

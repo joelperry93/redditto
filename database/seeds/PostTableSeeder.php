@@ -17,57 +17,20 @@ class PostTableSeeder extends Seeder {
 
 		DB::table('posts')->delete();
 
-		$posts = [
-			[
-				'user_id'      => 1, 
-				'subreddit_id' => 3, 
-				'title'        => 'This funny thing happened to me', 
-				'content'      => 'It was real funny.',
-				'slug'         => 'this-funny-thing-happened-to-me', 
-				'is_link'      => false, 
-				'is_nsfw'      => false
-			],	
-			[
-				'user_id'      => 1, 
-				'subreddit_id' => 1, 
-				'title'        => 'I love my hamster', 
-				'content'      => 'He is really cool!',
-				'slug'         => 'i-love-my-hamster', 
-				'is_link'      => false, 
-				'is_nsfw'      => false
-			],	
-			[
-				'user_id'      => 1, 
-				'subreddit_id' => 2, 
-				'title'        => 'Good video', 
-				'content'      => 'http://www.youtube.com',
-				'slug'         => 'good-video', 
-				'is_link'      => true,
-				'is_nsfw'      => false
-			],		
-			[
+		$faker = Faker\Factory::create();
 
-				'user_id'      => 1, 
-				'subreddit_id' => 5, 
-				'title'        => 'PC games are really good', 
-				'content'      => "It's better than other things",
-				'slug'         => 'pc-gaming-is-really-good', 
+		for ($i = 0; $i < 15; $i++) {
+			$sentence = $faker->sentence;
+
+			Post::create([
+				'user_id'      => rand(1, 5),
+				'subreddit_id' => rand(1, 5),
+				'title'        => $sentence,
+				'content'      => $faker->paragraph,
+				'slug'         => str_replace($sentence, ' ', '-'),
 				'is_link'      => false,
 				'is_nsfw'      => false
-			],		
-			[
-				'user_id'      => 1, 
-				'subreddit_id' => 3, 
-				'title'        => 'Haha, check this out', 
-				'content'      => 'http://www.google.com',
-				'slug'         => 'haha-check-this-out', 
-				'is_link'      => true,
-				'is_nsfw'      => false
-			]
-		];
-
-		foreach ($posts as $post) {
-			Post::create($post);
+			]);
 		}
 	}
 

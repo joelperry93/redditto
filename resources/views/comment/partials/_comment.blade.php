@@ -12,7 +12,7 @@
     <p class="col-sm-12">{{ $comment->content }}</p>
 
     <ul class="actions list-inline col-sm-12">
-        <li><a>+{{ $comment->votes() }}</a></li>
+        <li><span class="vote-count">{{ $comment->votes() }}</span></li>
         <li><a>reply</a></li>
         <li><a>report</a></li>
         <li><a>permalink</a></li>

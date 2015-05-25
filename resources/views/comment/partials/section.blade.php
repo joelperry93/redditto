@@ -1,12 +1,10 @@
 <div class="row">
-    <h5 class="title col-sm-12">Comments ({{ $post->comments->count() }})</h5>
+    <h5 class="title col-sm-12">Comments <small>({{ $post->comments->count() }})</small></h5>
 </div>
 
 
 @if ($post->comments->count() > 0)
-    <ul class="comments row">
-        @include('comment.partials._list', ['comments' => $post->rootComments])
-    </ul>
+    @include('comment.partials.comments', ['post' => $post])
 @else
     <p>:'( no one has commented</p>
 @endif
