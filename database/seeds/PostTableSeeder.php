@@ -27,7 +27,7 @@ class PostTableSeeder extends Seeder {
 				'subreddit_id' => rand(1, 5),
 				'title'        => $sentence,
 				'content'      => $faker->paragraph,
-				'slug'         => str_replace($sentence, ' ', '-'),
+				'slug'         => $faker->slug,
 				'is_link'      => false,
 				'is_nsfw'      => false
 			]);

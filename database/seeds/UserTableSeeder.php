@@ -17,16 +17,20 @@ class UserTableSeeder extends Seeder {
 
 		DB::table('users')->delete();
 
-		$users = [
-			['name' => 'joel', 'email' => 'joelperry@me.com', 'password' => '$2y$10$JFVBJO/RWmSL1UVFsv1uPeolMjqFn/BcFJAiMWjXApCW9/Uq.6WCa'],
-			['name' => 'dan', 'email' => 'dan@example.com', 'password' => '$2y$10$JFVBJO/RWmSL1UVFsv1uPeolMjqFn/BcFJAiMWjXApCW9/Uq.6WCa'],
-			['name' => 'tom', 'email' => 'tom@example.com', 'password' => '$2y$10$JFVBJO/RWmSL1UVFsv1uPeolMjqFn/BcFJAiMWjXApCW9/Uq.6WCa'],
-			['name' => 'bill', 'email' => 'bill@example.com', 'password' => '$2y$10$JFVBJO/RWmSL1UVFsv1uPeolMjqFn/BcFJAiMWjXApCW9/Uq.6WCa'],
-			['name' => 'ted', 'email' => 'ted@example.com', 'password' => '$2y$10$JFVBJO/RWmSL1UVFsv1uPeolMjqFn/BcFJAiMWjXApCW9/Uq.6WCa']
-		];
+		$faker = Faker\Factory::create();
 
-		foreach ($users as $user) {
-			User::create($user);
+		User::create([
+			'name'     => 'joel',
+			'email'    => 'joelperry@me.com',
+			'password' => '$2y$10$JFVBJO/RWmSL1UVFsv1uPeolMjqFn/BcFJAiMWjXApCW9/Uq.6WCa'
+		]);
+
+		for ($i = 0; $i < 20; $i++) {
+			User::create([
+				'name'     => $faker->userName,
+				'email'    => $faker->email,
+				'password' => $faker->word
+			]);
 		}
 	}
 
