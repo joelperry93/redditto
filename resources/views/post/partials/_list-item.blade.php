@@ -1,5 +1,5 @@
-<li class="col-md-6 col-sm-12">
-    <img />
+<li class="col-lg-4 col-md-6 col-sm-12">
+    <!--<img>-->
 
     <a href="{{ url( ($post->is_link ? $post->content : '/'.$post->subreddit->name.'/'.$post->slug)) }}">
         {{ $post->title }}

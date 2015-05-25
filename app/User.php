@@ -31,8 +31,7 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
 	 */
 	protected $hidden = ['password', 'remember_token'];
 
-
-	public function posts() 
+	public function posts()
 	{
 	    return $this->hasMany('Redditto\Post')->whereUserId($this->id);
 	}
