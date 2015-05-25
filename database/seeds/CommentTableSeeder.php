@@ -1,6 +1,6 @@
 <?php
 
-use App\Comment;
+use Redditto\Comment;
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Model;
 

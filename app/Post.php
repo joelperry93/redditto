@@ -38,4 +38,9 @@ class Post extends Model {
         return $this->hasMany('Redditto\Comment')->wherePostId($this->id)->whereParentId(null);
     }
 
+    public function votes()
+    {
+        return $this->hasMany('Redditto\Vote')->wherePostId($this->id)->sum('value');
+    }
+
 }

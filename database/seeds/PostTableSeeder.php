@@ -1,6 +1,6 @@
 <?php
 
-use App\Post;
+use Redditto\Post;
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Model;
 

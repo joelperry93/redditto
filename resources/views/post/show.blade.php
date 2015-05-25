@@ -2,7 +2,7 @@
 
 @section('content')
     <article class="post row">
-        <h4 class="title col-sm-6">{{ $post->title }}</h4>
+        <h4 class="title col-sm-6">{{ $post->title }} <small>({{ $post->votes() }})</small></h4>
 
         <h5 class="col-sm-6 details">
             <a href="{{ url('@'.$post->user->name) }}">

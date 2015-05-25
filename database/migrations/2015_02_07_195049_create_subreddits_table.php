@@ -17,7 +17,7 @@ class CreateSubredditsTable extends Migration {
 			$table->increments('id');
 			$table->string('name');
 			$table->text('description');
-			$table->boolean('adult_content');
+			$table->boolean('nsfw');
 			$table->timestamps();
 			$table->integer('creator_id')->unsigned();
 			$table->boolean('deleted')->default(false);
