@@ -11,7 +11,7 @@ class PostController extends Controller {
 
 	public function show(Subreddit $subreddit, Post $post)
 	{
-		return view('post.show', compact($post));
+		return view('post.show')->with(['post' => $post]);
 	}
 
 }

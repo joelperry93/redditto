@@ -23,6 +23,11 @@ class Comment extends Model {
         return $this->belongsTo('Redditto\User', 'user_id');
     }
 
+    public function post()
+    {
+        return $this->belongsTo('Redditto\Post', 'post_id');
+    }
+
     public function children()
     {
         return self::where('parent_id', $this->id)->get();

@@ -20,10 +20,17 @@ class CommentTableSeeder extends Seeder {
 		$faker = Faker\Factory::create();
 
 		for ($i = 0; $i < 100; $i++) {
+			$isChild = false;
+
+			if ($i > 0 && rand(1, 3) === 3) {
+				$isChild = true;
+				$parent = Comment::orderByRaw("RAND()")->first();
+			}
+
 			Comment::create([
 				'user_id'   => rand(1, 5),
-				'post_id'   => rand(1, 15),
-				'parent_id' => null,//rand(0, 2) ? rand(1, $i - 1) : null,
+				'post_id'   => $isChild ? $parent->post->id : rand(1, 15),
+				'parent_id' => $isChild ? $parent->id : null,
 				'content'   => $faker->sentence
 			]);
 		}
