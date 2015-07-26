@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +9,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>redditto | a clone of the front page of the internet</title>
 
-	<link href="/css/framework.css" rel="stylesheet">
+	<link href="/css/materialize.css" rel="stylesheet">
 	<link href="/css/app.css" rel="stylesheet">
 
 	<!-- Fonts -->
@@ -23,56 +24,23 @@
 	<![endif]-->
 </head>
 <body>
-	<nav class="navbar navbar-default">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-					<span class="sr-only">Toggle Navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
+	<nav class="blue accent-1 lighten-2" role="navigation">
+	    <div class="nav-wrapper container"><a id="logo-container" href="/" class="brand-logo">redditto</a>
+	     	<ul class="right hide-on-med-and-down">
+	        	<li><a href="#">Navbar Link</a></li>
+	      	</ul>
 
-				<a class="navbar-brand" href="/">redditto<!--<i class="fa fa-linux logo-icon"></i>--></a>
-			</div>
-
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<!--<ul class="nav navbar-nav">
-					<li><a href="/">Home</a></li>
-				</ul>-->
-
-				<ul class="nav navbar-nav navbar-right">
-						<li><a href="https://github.com/joelperry93/redditto">Source code</a></li>
-
-					@if (Auth::guest())
-						<li><a href="/auth/login">Login</a></li>
-						<li><a href="/auth/register">Register</a></li>
-					@else
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{ Auth::user()->name }} <span class="caret"></span></a>
-							<ul class="dropdown-menu" role="menu">
-								<li><a href="/auth/logout">Logout</a></li>
-							</ul>
-						</li>
-					@endif
-				</ul>
-			</div>
-		</div>
-
-		<ul>
-			<?php /*
-			@foreach ($subreddits as $subreddit)
-				<li>{{ $subreddit->name }}</li> 
-			@endforeach */?>
-		</ul>
-	</nav>
+		    <ul id="nav-mobile" class="side-nav">
+		        <li><a href="#">Navbar Link</a></li>
+	      	</ul>
+	      	<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">|||</i></a>
+	    </div>
+ 	</nav>
 
 	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<div class="panel">
-					@yield('content')
-				</div>
+		<div class="section">
+			<div class="col s12">
+				@yield('content')
 			</div>
 		</div>
 	</div>
@@ -82,9 +50,6 @@
 	</footer>
 	
 
-	<!-- Scripts -->
-	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
 	<script src="/js/bundle.js"></script>
 </body>
 </html>
