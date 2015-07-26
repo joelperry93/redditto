@@ -40,7 +40,7 @@ class Post extends Model {
 
     public function votes()
     {
-        return $this->hasMany('Redditto\PostVote')->wherePostId($this->id)->sum('value');
+        return $this->hasMany('Redditto\PostVote')->wherePostId($this->id)->sum('value') + 1;
     }
 
 }

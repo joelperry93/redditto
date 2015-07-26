@@ -5,3 +5,4 @@
 .idea/
 .package.json.swp
 .sass-cache
+/public/js/bundle.js

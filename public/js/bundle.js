@@ -7,6 +7,7 @@ Vue.use(require('vue-resource'));
 Vue.http.headers.common['X-CSRF-TOKEN'] = document.querySelector('#token').getAttribute('value');
 
 new Vue({
+
     el: '#new-comment-box',
 
     data: {
@@ -21,6 +22,7 @@ new Vue({
             this.$http.post(location.pathname + '/comment', this.comment);
         }
     }
+
 });
 
 },{"vue":75,"vue-resource":4}],2:[function(require,module,exports){

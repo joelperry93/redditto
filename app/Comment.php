@@ -35,6 +35,6 @@ class Comment extends Model {
 
     public function votes()
     {
-        return $this->hasMany('Redditto\CommentVote')->whereCommentId($this->id)->sum('value');
+        return $this->hasMany('Redditto\CommentVote')->whereCommentId($this->id)->sum('value') + 1;
     }
 }
