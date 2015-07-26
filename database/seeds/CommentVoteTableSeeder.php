@@ -1,6 +1,8 @@
 <?php
 
 use Redditto\CommentVote;
+use Redditto\Comment;
+use Redditto\User;
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Model;
 
@@ -17,12 +19,10 @@ class CommentVoteTableSeeder extends Seeder {
 
 		DB::table('comment_votes')->delete();
 
-		$votes = [];
-
 		for ($i = 0; $i < 2000; $i++) {
 			CommentVote::create([
-				'comment_id' => rand(1, 5),
-				'user_id'    => rand(1, 5),
+				'comment_id' => Comment::orderByRaw("RAND()")->first()->id,
+				'user_id'    => User::orderByRaw("RAND()")->first()->id,
 				'value'      => rand(0, 5) ? 1 : -1
 			]);
 		}
